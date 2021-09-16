@@ -9,7 +9,7 @@ CHIP Not {
     Nand(a=in, b=in, out=out);
 }
 ```
-![./not.png]
+![not](./not.png)
 # And
 ```hdl
 CHIP And {
@@ -22,7 +22,7 @@ CHIP And {
     Not(in=ab,out=out);
 }
 ```
-![./and.png]
+![and](./and.png)
 # Or
 ```hdl
 CHIP Or {
@@ -36,7 +36,7 @@ CHIP Or {
     Nand(a=pin1,b=pin2,out=out);
 }
 ```
-![./or.png]
+![or](./or.png)
 # Xor
 ```hdl
 CHIP Xor {
@@ -53,7 +53,7 @@ CHIP Xor {
     Or(a=a0b,b=ab0,out=out);
 }
 ```
-![./XOR.png]
+![Xor](./XOR.png)
 # Mux
 ```hdl
 CHIP Mux {
@@ -69,7 +69,7 @@ CHIP Mux {
     Or(a=asel0,b=bsel,out=out);
 }
 ```
-![./MUX.png]
+![MUX](./MUX.png)
 # DMux
 ```hdl
 CHIP DMux {
@@ -83,4 +83,4 @@ CHIP DMux {
     And(a=in,b=sel,out=b);
 }
 ```
-![./DEMUX.png]
+![DMux](./DEMUX.png)
