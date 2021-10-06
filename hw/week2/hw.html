@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>第二周作業</title>
+<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+</head>
+<body>
+<p>本網頁使用<a href="https://unpkg.com/sakura.css/css/sakura.css">sakura.css</a></p>
+<h1>完成 nand2tetris 第一章後半習題</h1>
+    <h2>Not16</h2>
+        <div>
+            <p> CHIP Not16 {<br/>
+                IN in[16];  <br/>
+                OUT out[16];<br/>
+                OUT out[16];
+            </p>
+            <p> Not(in=in[0],out=out[0]);<br/>
+                Not(in=in[1],out=out[1]);<br/>
+                Not(in=in[2],out=out[2]);<br/>
+                Not(in=in[3],out=out[3]);<br/>
+                Not(in=in[4],out=out[4]);<br/>
+                Not(in=in[5],out=out[5]);<br/>
+                Not(in=in[6],out=out[6]);<br/>
+                Not(in=in[7],out=out[7]);<br/>
+                Not(in=in[8],out=out[8]);<br/>
+                Not(in=in[9],out=out[9]);<br/>
+                Not(in=in[10],out=out[10]);<br/>
+                Not(in=in[11],out=out[11]);<br/>
+                Not(in=in[12],out=out[12]);<br/>
+                Not(in=in[13],out=out[13]);<br/>
+                Not(in=in[14],out=out[14]);<br/>
+                Not(in=in[15],out=out[15]);<br/>
+                }
+            <p>
+        </div>
+        <div>
+            <img src="picture/not16.png" alt="not16">
+        </div>
+    <h2>And16</h2>
+        <div>
+            <p> CHIP And16 {<br/>
+                IN a[16], b[16];<br/>
+                OUT out[16];
+            </p>
+            <p> And(a=a[0],b=b[0],out=out[0]);</br>
+                And(a=a[1],b=b[1],out=out[1]);</br>
+                And(a=a[2],b=b[2],out=out[2]);</br>
+                And(a=a[3],b=b[3],out=out[3]);</br>
+                And(a=a[4],b=b[4],out=out[4]);</br>
+                And(a=a[5],b=b[5],out=out[5]);</br>
+                And(a=a[6],b=b[6],out=out[6]);</br>
+                And(a=a[7],b=b[7],out=out[7]);</br>
+                And(a=a[8],b=b[8],out=out[8]);</br>
+                And(a=a[9],b=b[9],out=out[9]);</br>
+                And(a=a[10],b=b[10],out=out[10]);</br>
+                And(a=a[11],b=b[11],out=out[11]);</br>
+                And(a=a[12],b=b[12],out=out[12]);</br>
+                And(a=a[13],b=b[13],out=out[13]);</br>
+                And(a=a[14],b=b[14],out=out[14]);</br>
+                And(a=a[15],b=b[15],out=out[15]);</br>
+                }
+            <p>
+        </div>
+        <div>
+            <img src="picture/and16.png" alt="and16">
+        </div>
+    <h2>Or16</h2>
+        <div>
+            <p> CHIP Or16 {<br/>
+                IN a[16], b[16];<br/>
+                OUT out[16];
+            </p>
+            <p> Or(a=a[0],b=b[0],out=out[0]);</br>
+                Or(a=a[1],b=b[1],out=out[1]);</br>
+                Or(a=a[2],b=b[2],out=out[2]);</br>
+                Or(a=a[3],b=b[3],out=out[3]);</br>
+                Or(a=a[4],b=b[4],out=out[4]);</br>
+                Or(a=a[5],b=b[5],out=out[5]);</br>
+                Or(a=a[6],b=b[6],out=out[6]);</br>
+                Or(a=a[7],b=b[7],out=out[7]);</br>
+                Or(a=a[8],b=b[8],out=out[8]);</br>
+                Or(a=a[9],b=b[9],out=out[9]);</br>
+                Or(a=a[10],b=b[10],out=out[10]);</br>
+                Or(a=a[11],b=b[11],out=out[11]);</br>
+                Or(a=a[12],b=b[12],out=out[12]);</br>
+                Or(a=a[13],b=b[13],out=out[13]);</br>
+                Or(a=a[14],b=b[14],out=out[14]);</br>
+                Or(a=a[15],b=b[15],out=out[15]);</br>
+                }
+            <p>
+        </div>
+        <div>
+            <img src="picture/or16.png" alt="or16">
+        </div>
+    <h2>Mux16</h2>
+        <div>
+            <p> CHIP Mux16 {<br/>
+                IN a[16], b[16],sel;<br/>
+                OUT out[16];
+            </p>
+            <p> Mux(sel=sel, a=a[0],  b=b[0],   out=out[0]);</br>
+                Mux(sel=sel, a=a[1],  b=b[1],   out=out[1]);</br>
+                Mux(sel=sel, a=a[2],  b=b[2],   out=out[2]);</br>
+                Mux(sel=sel, a=a[3],  b=b[3],   out=out[3]);</br>
+                Mux(sel=sel, a=a[4],  b=b[4],   out=out[4]);</br>
+                Mux(sel=sel, a=a[5],  b=b[5],   out=out[5]);</br>
+                Mux(sel=sel, a=a[6],  b=b[6],   out=out[6]);</br>                
+                Mux(sel=sel, a=a[7],  b=b[7],   out=out[7]);</br>                
+                Mux(sel=sel, a=a[8],  b=b[8],   out=out[8]);</br>                
+                Mux(sel=sel, a=a[9],  b=b[9],   out=out[9]);</br>                
+                Mux(sel=sel, a=a[10],  b=b[10],   out=out[10]);</br>
+                Mux(sel=sel, a=a[11],  b=b[11],   out=out[11]);</br>
+                Mux(sel=sel, a=a[12],  b=b[12],   out=out[12]);</br>
+                Mux(sel=sel, a=a[13],  b=b[13],   out=out[13]);</br>
+                Mux(sel=sel, a=a[14],  b=b[14],   out=out[14]);</br>
+                Mux(sel=sel, a=a[15],  b=b[15],   out=out[15]);</br>
+                }
+            <p>
+        </div>
+        <div>
+            <img src="picture/mux16.png" alt="mux16">
+        </div>
+        <h2>Or8Way</h2>
+            <p>8 組輸入Or Gate,輸出一位，每組輸入1bit</p>
+            <div>
+                <p> CHIP Or8Way {<br/>
+                    IN in[8];<br/>
+                    OUT out;
+                </p>
+                <p> Or(a=in[0],b=in[1],out=aa);</br>
+                    Or(a=in[2],b=in[3],out=bb);</br>
+                    Or(a=in[4],b=in[5],out=cc);</br>
+                    Or(a=in[6],b=in[7],out=dd);</br></br>
+                    Or(a=aa,b=bb,out=ab);</br>
+                    Or(a=cc,b=dd,out=cd);</br></br>
+                    Or(a=ab,b=cd,out=out);</br>
+                    }
+                <p>
+            </div>
+            <div>
+                <img src="picture/or8way.png" alt="or8way">
+            </div>
+        <h2>Mux4Way16</h2>
+            <p>4組輸入abcd，每組輸入皆16bit，輸出1組16bit, 選擇線兩條去四選一</p>
+            <div>
+                <p> CHIP Mux4Way16 {<br/>
+                    IN a[16], b[16], c[16], d[16], sel[2];<br/>
+                    OUT out[16];
+                </p>
+                <p> Mux16(a=a,b=b,sel=sel[0],out=outab);<br/>
+                    Mux16(a=c,b=d,sel=sel[0],out=outcd);<br/><br/>
+                    Mux16(a=outab,b=outcd,sel=sel[1],out=out);<br/>
+                    }
+                <p>
+            </div>
+            <div>
+                <img src="picture/Mux4Way16.jpg" alt="Mux4Way16">
+            </div>
+        <h2>Mux8Way16</h2>
+            <div>
+                <p> CHIP Mux8Way16 {<br/>
+                    IN a[16], b[16], c[16], d[16],e[16], f[16], g[16], h[16],sel[3];<br/>
+                    OUT out[16];
+                </p>
+                <p> Mux4Way16(a=a,b=b,c=c,d=d,sel[0]=sel[0],sel[1]=sel[1],out=abcd);<br/>
+                    Mux4Way16(a=e,b=f,c=g,d=h,sel[0]=sel[0],sel[1]=sel[1],out=efgh);<br/><br/>
+                    Mux16(a=abcd,b=efgh,sel=sel[2],out=out);<br/>
+                    }
+                <p>
+            </div>
+            <div>
+                <img src="picture/Mux8Way16.jpg" alt="Mux8Way16">
+            </div>
+        <h2>DMux4Way</h2>
+            <div>
+                <p> CHIP DMux4Way {<br/>
+                    IN in, sel[2];<br/>
+                    OUT a, b, c, d;
+                </p>
+                <p> DMux(in=in,sel=sel[1],a=sel1,b=sel2);<br/>
+                    DMux(in=sel1,sel=sel[0],a=a,b=b);<br/>
+                    DMux(in=sel2,sel=sel[0],a=c,b=d);<br/>
+                    }
+                <p>
+            </div>
+            <div>
+                <img src="picture/DMux4Way.jpg" alt="DMux4Way">
+            </div>
+        <h2>DMux8Way</h2>
+            <div>
+                <p> CHIP DMux8Way {<br/>
+                    IN in, sel[3];<br/>
+                    OUT a, b, c, d, e, f, g, h;
+                </p>
+                <p> DMux(in=in,sel=sel[2],a=sel12,b=sel34);<br/><br/>
+                    DMux(in=sel12,sel=sel[1],a=sel1,b=sel2);<br/>
+                    DMux(in=sel34,sel=sel[1],a=sel3,b=sel4);<br/><br/>
+                    DMux(in=sel1,sel=sel[0],a=a,b=b);<br/>
+                    DMux(in=sel2,sel=sel[0],a=c,b=d);<br/>
+                    DMux(in=sel3,sel=sel[0],a=e,b=f);<br/>
+                    DMux(in=sel4,sel=sel[0],a=g,b=h);<br/>
+                    }
+                <p>
+            </div>
+            <div>
+                <img src="picture/DMux8Way.jpg" alt="DMux8Way">
+            </div>
+    <h1>證明迪摩根定律二式 Not(x Or y) = Not(x) And Not(y)</h1>
+        <div>
+            <img src="picture/prove.png" alt="prove">
+        </div>   
+    <h1>七段顯示器中指定的一根亮棒</h1>
+        <p>40%7==5</p>
+        <div>
+            <img src="picture/seven.jpg" alt="seven">
+        </div>
+</body>
+</html>
