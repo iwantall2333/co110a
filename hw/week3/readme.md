@@ -1,13 +1,38 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/02/Adder16.hdl
+# HA
+```hdl
+CHIP HalfAdder {
+    IN a, b;    // 1-bit inputs
+    OUT sum,    // Right bit of a + b 
+        carry;  // Left bit of a + b
 
-/**
- * Adds two 16-bit values.
- * The most significant carry bit is ignored.
- */
+    PARTS:
+    // Put you code here:
+    Xor(a=a,b=b,out=sum);
+    And(a=a,b=b,out=carry);
+}
+```
+![HA](./picture/HA.jpg)
+# FA
+```hdl
+CHIP FullAdder {
+    IN a, b, c;  // 1-bit inputs
+    OUT sum,     // Right bit of a + b + c
+        carry;   // Left bit of a + b + c
 
+    PARTS:
+    // Put you code here:
+    Xor(a=a,b=b,out=ab);
+    Xor(a=ab,b=c,out=sum);
+    And(a=a,b=c,out=A);
+    And(a=b,b=c,out=B);
+    And(a=a,b=b,out=C);
+    Or(a=A,b=B,out=AB);
+    Or(a=AB,b=C,out=carry);
+}
+```
+![FA](./picture/FA.jpg)
+# Add16
+```hdl
 CHIP Add16 {
     IN a[16], b[16];
     OUT out[16];
@@ -31,3 +56,17 @@ CHIP Add16 {
 	FullAdder(a=a[14],b=b[14],c=q,sum=out[14],carry=r);
    	FullAdder(a=a[15],b=b[15],c=r,sum=out[15],carry=discard);
 }
+```
+![add16](./picture/add16.jpg)
+# Inc16
+```hdl
+CHIP Inc16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+   // Put you code here:
+   Add16(a=in,b[0]=true,out=out);
+}
+```
+![inc16](./picture/inc16.jpg)
