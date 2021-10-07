@@ -32,6 +32,7 @@ CHIP FullAdder {
 ```
 ![FA](./picture/FA.jpg)
 # Add16
+The most significant carry bit is ignored. : 2's complement
 ```hdl
 CHIP Add16 {
     IN a[16], b[16];
