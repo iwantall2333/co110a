@@ -1,4 +1,4 @@
-# ALU nostat
+# ALU nostate
 ```hdl
 CHIP ALU {
     IN  
