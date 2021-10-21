@@ -80,6 +80,17 @@ CHIP RAM16K {
 ![RAM16K](./RAM16K.jpg)
 # PC
 ```hdl
+CHIP PC {
+    IN in[16],load,inc,reset;
+    OUT out[16];
 
+    PARTS:
+    // Put your code here:
+    Register(in=resetOut,load=true,out=out,out=out2);
+    Inc16(in=out2,out=incOut);
+    Mux16(a=out2,b=incOut,sel=inc,out=incMuxOut);
+    Mux16(a=incMuxOut,b=in,sel=load,out=loadOut);
+    Mux16(a=loadOut,b=false,sel=reset,out=resetOut);
+}
 ```
 ![PC](./PC.jpg)
