@@ -41,6 +41,7 @@ M=D
 @34                                      
 0;JMP                                
 ```
+![multi](./multi.jpg)
 # Fill
 按下鍵盤螢幕全黑，不按下鍵盤螢幕白
 ```hdl
