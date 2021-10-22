@@ -82,4 +82,4 @@ D=M
 0;JMP
 ```
 ![fill](./fill.jpg)
-![DEMO]](./DEMO.jpg)
+![DEMO](./DEMO.jpg)
