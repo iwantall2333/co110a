@@ -11,7 +11,7 @@
 // "white" in every pixel;
 // the screen should remain fully clear as long as no key is pressed.
 
-// Put your code here.
+// Put your code here.  這個執行不會有用，要執行作業那個版本
 
 @24576  //FIRST 確認鍵盤是否按下
 D=M
