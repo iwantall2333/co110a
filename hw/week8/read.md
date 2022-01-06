@@ -22,6 +22,7 @@
 ## 五.探討每個C
 ![C1](./C1.png)
 ![C2](./C2.png)
+## 作業
 ![CPU](./CPU.png)
 ```hdl
 CHIP CPU {

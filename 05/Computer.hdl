@@ -20,4 +20,13 @@ CHIP Computer {
 
     PARTS:
     // Put your code here:
+    //ROM做指令儲存，向CPU輸出指令
+    ROM32K(address=pc, out=instruction);
+    //memory做數據儲存，向CPU輸出數據
+    Memory(in=CpuOutM, load=CPUwriteM, address=CPUaddrM, out=inM);
+    //CPU做指令與數據處理
+    CPU(inM=inM,instruction=instruction, reset=reset, outM=CpuOutM, writeM=CPUwriteM, addressM=CPUaddrM, pc=pc);
+    
+    
+    
 }
