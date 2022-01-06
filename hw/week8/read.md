@@ -4,7 +4,7 @@
     (https://zhuanlan.zhihu.com/p/346512588)
     https://github.com/stereomp3/co110a/tree/master/homework/week08
 ## 一. ALU
-![ALU](./ALU.jpg)
+![ALU](./ALU.png)
 ## 二.輸入三條指令
     1.指令輸入16bit (A:0vvvvvvvvvvvvvvv C:111accccccdddjjj)
     2.輸入M的內容
@@ -19,9 +19,9 @@
 ## 四.ddd是甚麼 : 目的
     d1 : A register , d2 : D register , d3 : outM(CPU所輸出到的dataMemory)
 ## 五.探討每個C
-![C1](./C1.jpg)
-![C2](./C2.jpg)
-![CPU](./CPU.jpg)
+![C1](./C1.png)
+![C2](./C2.png)
+![CPU](./CPU.png)
 ```hdl
 CHIP CPU {
 
