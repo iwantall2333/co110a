@@ -1,30 +1,28 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/05/CPU.hdl
+# CPU
+## 參考資料
+    NAND2Tetris(2)-Boolean Arithmetic and the ALU - 知乎
+    (https://zhuanlan.zhihu.com/p/346512588)
+    https://github.com/stereomp3/co110a/tree/master/homework/week08
+## 一. ALU
+![ALU](./ALU.jpg)
+## 二.輸入三條指令
+    1.指令輸入16bit (A:0vvvvvvvvvvvvvvv C:111accccccdddjjj)
+    2.輸入M的內容
+    3.輸入reset
 
-/**
- * The Hack CPU (Central Processing unit), consisting of an ALU,
- * two registers named A and D, and a program counter named PC.
- * The CPU is designed to fetch and execute instructions written in 
- * the Hack machine language. In particular, functions as follows:
- * Executes the inputted instruction according to the Hack machine 
- * language specification. The D and A in the language specification
- * refer to CPU-resident registers, while M refers to the external
- * memory location addressed by A, i.e. to Memory[A]. The inM input 
- * holds the value of this location. If the current instruction needs 
- * to write a value to M, the value is placed in outM, the address 
- * of the target location is placed in the addressM output, and the 
- * writeM control bit is asserted. (When writeM==0, any value may 
- * appear in outM). The outM and writeM outputs are combinational: 
- * they are affected instantaneously by the execution of the current 
- * instruction. The addressM and pc outputs are clocked: although they 
- * are affected by the execution of the current instruction, they commit 
- * to their new values only in the next time step. If reset==1 then the 
- * CPU jumps to address 0 (i.e. pc is set to 0 in next time step) rather 
- * than to the address resulting from executing the current instruction. 
- */
+## 三.ALU zrng與jump指令判斷  (PC部分)
+    j1 : < ,  j2 : = , j3 : > , 將j1j2j3組合(ex:<= 110)
+    <  : c指令的 j1 & ng
+    =  : c指令的 j2 & zr
+    >  : c指令的 j3 & !(ng+zr)
 
+## 四.ddd是甚麼 : 目的
+    d1 : A register , d2 : D register , d3 : outM(CPU所輸出到的dataMemory)
+## 五.探討每個C
+![C1](./C1.jpg)
+![C2](./C2.jpg)
+![CPU](./CPU.jpg)
+```hdl
 CHIP CPU {
 
     IN  inM[16],         // M value input  (M = contents of RAM[A])
@@ -72,3 +70,5 @@ CHIP CPU {
     And(a=jjj,b=instruction[15],out=loadPC);
     PC(in=outAreg, load=loadPC, inc=true, reset=reset, out[0..14]=pc);
 }
+```
+
