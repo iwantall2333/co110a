@@ -2,7 +2,8 @@
 ## 參考資料
     NAND2Tetris(2)-Boolean Arithmetic and the ALU - 知乎
     (https://zhuanlan.zhihu.com/p/346512588)
-    https://github.com/stereomp3/co110a/tree/master/homework/week08
+    程式碼與圖皆自己畫，不懂的地方有參考這位同學的 : https://github.com/stereomp3/co110a/tree/master/homework/week08 
+    
 ## 一. ALU
 ![ALU](./ALU.png)
 ## 二.輸入三條指令
