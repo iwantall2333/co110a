@@ -31,10 +31,10 @@ CHIP Memory {
 
 # computer
 ## 參考資料
-[nand2tetris ch5 计算机体系结构](https://4eay7lab.com/2019/07/09/nand2tetris-5/)
-https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view
+1. [nand2tetris ch5 计算机体系结构](https://4eay7lab.com/2019/07/09/nand2tetris-5/)
+2. https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view
 ## 筆記
-![CPU&Memory]](./pkkk.png)
+![CPUMemory]](./pkkk.png)
 CPU执行指令存储器中的指令，而数据存储器和指令存储器分别为RAM和ROM
 ## 作業
 ![computer](./computer.jpeg)
