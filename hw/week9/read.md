@@ -1,8 +1,8 @@
 
 # memory
 ## 參考資料
-    https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view
-    程式碼與圖皆自己畫，不懂的地方有參考這位同學的 : https://github.com/stereomp3/co110a/tree/master/homework/week09
+1. https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view
+2. 程式碼與圖皆自己畫，不懂的地方有參考這位同學的 : https://github.com/stereomp3/co110a/tree/master/homework/week09
 ## 筆記
 ![note1](./note1.png)
 ![note2](./note2.png)
@@ -34,7 +34,7 @@ CHIP Memory {
 1. [nand2tetris ch5 计算机体系结构](https://4eay7lab.com/2019/07/09/nand2tetris-5/)
 2. https://drive.google.com/file/d/1nEptWuRpFF9zmqlKYq6s1UfDB_dd16vx/view
 ## 筆記
-![CPUMemory]](./pkkk.png)
+![CPUMemory](./pkkk.png)
 CPU执行指令存储器中的指令，而数据存储器和指令存储器分别为RAM和ROM
 ## 作業
 ![computer](./computer.jpeg)
