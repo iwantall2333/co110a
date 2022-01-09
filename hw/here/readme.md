@@ -1,6 +1,6 @@
 # nand2tetris
 * 重點筆記 : week8 week9 week7
-* 程式碼與圖皆原創，閱讀材料為nand2tetris ppt + 老師上課說明
+* 程式碼與圖皆原創，閱讀材料為nand2tetris ppt + 老師上課說明  
 [week1](https://github.com/iwantall2333/co110a/blob/master/hw/week1/week1.md)  
 [week2](https://iwantall2333.github.io/co110a/hw/week2/hw.html)  
 [week3 HA FA Add16 Inc16](https://github.com/iwantall2333/co110a/tree/master/hw/week3)  
