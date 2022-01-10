@@ -1,7 +1,7 @@
 # 請寫出自己的 C 語言標準函式庫_我不是原創
 ## 參考資料
 1. [austin362667的程式碼](https://github.com/austin362667/c-tricks)  
-我的memcpy是看他的程式碼學的，結果來說抄95%  
+我的memcpy是看他的程式碼學的，結果來說模仿了95%  
 過程中把整個程式碼看懂之後自己又想了想怎麼改寫才能不限定處理字串，  
 最後查到這裡 : [https://github.com/gcc-mirror/gcc/blob/master/libgcc/memcpy.c](https://github.com/gcc-mirror/gcc/blob/master/libgcc/memcpy.c)，
 左思右想他的方法不可行，結果繞了一大圈還是學長寫的最好，寫得更好的我已經看不懂了。 
